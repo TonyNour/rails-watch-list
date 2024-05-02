@@ -1,0 +1,10 @@
+<h1>List Menu</h1>
+<hr>
+<ul>
+  <% @lists.each do |list| %>
+    <li> <%= link_to list.name, list_path(list), class: 'text-decoration-none'%> </li>
+  <% end %>
+</ul>
+
+
+<%= link_to 'Create new list', new_list_path%>
